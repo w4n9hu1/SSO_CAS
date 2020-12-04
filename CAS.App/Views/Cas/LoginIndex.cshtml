@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "LoginIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Cas Login</h2>
+
+<form action="/Cas/Login" method="post">
+    <input type="text"   name="userID" value="" />
+    <input type="hidden" id="app" name="App" value="" />
+    <button type="submit">Login</button>
+</form>
+
+@section scripts{
+    <script src="~/Scripts/loginindex.js"></script>
+}
